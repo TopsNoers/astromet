@@ -4,10 +4,11 @@ interface Props {
 }
 
 const { title } = Astro.props;
-import ExternalScript from "../components/ExternalScript.astro";
 import Sidebar from "../components/organisms/Sidebar.astro";
 import Navbar from "../components/organisms/Navbar.astro";
+import ExternalScript from "../components/ExternalScript.astro";
 import "../assets/css/style.bundle.css";
+import "../assets/plugins/global/plugins.bundle.css";
 ---
 
 <!doctype html>
@@ -32,6 +33,7 @@ import "../assets/css/style.bundle.css";
                 </div>
             </div>
             <!--end::Page-->
+            <ExternalScript />
         </div>
 	</body>
 </html>
